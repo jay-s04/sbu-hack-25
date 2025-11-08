@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 455, 200);
+        Scene scene = new Scene(fxmlLoader.load(), 655, 400);
         stage.setTitle("Environmental Impact Calculator");
         stage.setScene(scene);
         stage.show();
