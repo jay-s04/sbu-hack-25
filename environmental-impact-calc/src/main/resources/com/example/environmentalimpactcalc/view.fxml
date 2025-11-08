@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.environmentalimpactcalc.Controller">
+<VBox alignment="CENTER" prefHeight="199.0" prefWidth="455.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.environmentalimpactcalc.Controller">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+   <Label prefHeight="188.0" prefWidth="415.0" text="How Much Electricity Does Your House Use?" wrapText="true">
+      <font>
+         <Font name="Comic Sans MS" size="37.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label text="Label">
+            <HBox.margin>
+               <Insets right="40.0" />
+            </HBox.margin>
+         </Label>
+         <Slider />
+         <Button mnemonicParsing="false" text="Next!">
+            <HBox.margin>
+               <Insets left="50.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </HBox>
 </VBox>
